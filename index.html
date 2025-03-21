@@ -3,36 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bussiness Forum</title>
+    <title>Business Forum</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
 </head>
 <body>
 <div class="container">
-
+<div class="back">
     <H1>Forum</H1>
+    <li><a id="info" href="#About US">About Us </a></li>
+    <li><a id="info" href="#contact">Contact Us </a></li>
+    <li><a id="info" href="#client">Clients</a></li>
+  
 
-    <p class="info" id="about">About Us </p>
-
-    <p class="info" id="contact">Contact Us </p>
-
-    <p class="info" id="client">Clients</p>
-
-
-     
-    </div>
-    <form>
+</div>
+<div class="form">
+    <div class="image">
+ 
+    <img src="image/image2.png" width="400px">
+    
+    <img src="image/image1.png" width="400px">
+    <img src="image/image3.png" width="400px">
+    
+</div>
+    <form method="Post">
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="fname"><br>
+        <input type="text" id="fname" name="fname"  required minlength="5"> <br>
     
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lname"><br>
+        <input type="text" id="lname" name="lname" required minlength="5"> <br>
+
+        <label for="Business">Business name</label>
+        <input type="text" id="Bussiness" name="Bussiness" required minlength="4"> <br>
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" required><br>
         <input type="submit" value="Submit">
     </form>
 
+</div> 
+<div class="footer">
+    <ul>
+        <li><a id="foot" href= "#Termandservice"> Terms and Services</a></li>
+        <li><a id="foot" href="#privacyPolicy"> Privacy Policy</a></li>
+        <li><a id="foot" href="#Help"> Help</a></li>
+    </ul>
+</div>
+
+
+</div>
+
  
-
-
-
-   </form>
 </body>
 </html>
